@@ -347,7 +347,7 @@
                 <option>
                     <name>CCIncludePath2</name>
                     <state>$PROJ_DIR$/..</state>
-                    <state>$PROJ_DIR$/../../../xip</state>
+                    <state>$PROJ_DIR$/../../../xip_flash_config</state>
                     <state>$PROJ_DIR$/../../../../../CMSIS/Core/Include</state>
                 </option>
                 <option>
@@ -1425,7 +1425,7 @@
                 <option>
                     <name>CCIncludePath2</name>
                     <state>$PROJ_DIR$/..</state>
-                    <state>$PROJ_DIR$/../../../xip</state>
+                    <state>$PROJ_DIR$/../../../xip_flash_config</state>
                     <state>$PROJ_DIR$/../../../../../CMSIS/Core/Include</state>
                 </option>
                 <option>
@@ -2501,7 +2501,7 @@
                 <option>
                     <name>CCIncludePath2</name>
                     <state>$PROJ_DIR$/..</state>
-                    <state>$PROJ_DIR$/../../../xip</state>
+                    <state>$PROJ_DIR$/../../../xip_flash_config</state>
                     <state>$PROJ_DIR$/../../../../../CMSIS/Core/Include</state>
                 </option>
                 <option>
@@ -3579,7 +3579,7 @@
                 <option>
                     <name>CCIncludePath2</name>
                     <state>$PROJ_DIR$/..</state>
-                    <state>$PROJ_DIR$/../../../xip</state>
+                    <state>$PROJ_DIR$/../../../xip_flash_config</state>
                     <state>$PROJ_DIR$/../../../../../CMSIS/Core/Include</state>
                 </option>
                 <option>

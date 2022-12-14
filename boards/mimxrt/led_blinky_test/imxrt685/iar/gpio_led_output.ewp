@@ -40,7 +40,7 @@
                 </option>
                 <option>
                     <name>Output description</name>
-                    <state>No specifier n, no float nor long long, no scan set, no assignment suppressing, without multibyte support.</state>
+                    <state>No specifier a, A, no specifier n, no float nor long long, without multibyte support.</state>
                 </option>
                 <option>
                     <name>GOutputBinary</name>
@@ -74,7 +74,7 @@
                 </option>
                 <option>
                     <name>OGChipSelectEditMenu</name>
-                    <state>MIMXRT1011xxx5A	NXP MIMXRT1011xxx5A</state>
+                    <state>MIMXRT685S_M33	NXP MIMXRT685S_M33</state>
                 </option>
                 <option>
                     <name>GenLowLevelInterface</name>
@@ -99,7 +99,7 @@
                 <option>
                     <name>GBECoreSlave</name>
                     <version>32</version>
-                    <state>41</state>
+                    <state>58</state>
                 </option>
                 <option>
                     <name>OGUseCmsis</name>
@@ -116,11 +116,11 @@
                 <option>
                     <name>CoreVariant</name>
                     <version>32</version>
-                    <state>41</state>
+                    <state>61</state>
                 </option>
                 <option>
                     <name>GFPUDeviceSlave</name>
-                    <state>MIMXRT1011xxx5A	NXP MIMXRT1011xxx5A</state>
+                    <state>MIMXRT685S_M33	NXP MIMXRT685S_M33</state>
                 </option>
                 <option>
                     <name>FPU2</name>
@@ -139,7 +139,7 @@
                 <option>
                     <name>GFPUCoreSlave2</name>
                     <version>32</version>
-                    <state>41</state>
+                    <state>61</state>
                 </option>
                 <option>
                     <name>OGCMSISPackSelectDevice</name>
@@ -189,7 +189,7 @@
                 <option>
                     <name>TrustZoneModes</name>
                     <version>0</version>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>OGAarch64Abi</name>
@@ -223,8 +223,8 @@
                 <option>
                     <name>CCDefines</name>
                     <state>DEBUG</state>
-                    <state>CPU_MIMXRT1011DAE5A</state>
-                    <state>SERIAL_PORT_TYPE_UART=1</state>
+                    <state>CPU_MIMXRT685SFVKB_cm33</state>
+                    <state>BOOT_HEADER_ENABLE=1</state>
                     <state>MCUXPRESSO_SDK</state>
                 </option>
                 <option>
@@ -521,7 +521,6 @@
                 <option>
                     <name>ADefines</name>
                     <state>DEBUG</state>
-                    <state>__STARTUP_INITIALIZE_NONCACHEDATA</state>
                 </option>
                 <option>
                     <name>AList</name>
@@ -643,15 +642,15 @@
                 <option>
                     <name>OOCOutputFormat</name>
                     <version>3</version>
-                    <state>0</state>
+                    <state>3</state>
                 </option>
                 <option>
                     <name>OCOutputOverride</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>OOCOutputFile</name>
-                    <state></state>
+                    <state>sdk20-app.bin</state>
                 </option>
                 <option>
                     <name>OOCCommandLineProducer</name>
@@ -659,7 +658,7 @@
                 </option>
                 <option>
                     <name>OOCObjCopyEnable</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
             </data>
         </settings>
@@ -698,7 +697,7 @@
                 </option>
                 <option>
                     <name>IlinkOutputFile</name>
-                    <state>iled_blinky.out</state>
+                    <state>gpio_led_output.out</state>
                 </option>
                 <option>
                     <name>IlinkDebugInfoEnable</name>
@@ -762,7 +761,7 @@
                 </option>
                 <option>
                     <name>IlinkIcfFile</name>
-                    <state>$PROJ_DIR$/MIMXRT1011xxxxx_ram.icf</state>
+                    <state>$PROJ_DIR$/MIMXRT685Sxxxx_cm33_ram.icf</state>
                 </option>
                 <option>
                     <name>IlinkIcfFileSlave</name>
@@ -1078,7 +1077,7 @@
         </settings>
     </configuration>
     <configuration>
-        <name>flexspi_nor_debug</name>
+        <name>flash_debug</name>
         <toolchain>
             <name>ARM</name>
         </toolchain>
@@ -1096,15 +1095,15 @@
                 </option>
                 <option>
                     <name>ExePath</name>
-                    <state>$PROJ_DIR$/flexspi_nor_debug</state>
+                    <state>$PROJ_DIR$/flash_debug</state>
                 </option>
                 <option>
                     <name>ObjPath</name>
-                    <state>$PROJ_DIR$/flexspi_nor_debug/obj</state>
+                    <state>$PROJ_DIR$/flash_debug/obj</state>
                 </option>
                 <option>
                     <name>ListPath</name>
-                    <state>$PROJ_DIR$/flexspi_nor_debug/list</state>
+                    <state>$PROJ_DIR$/flash_debug/list</state>
                 </option>
                 <option>
                     <name>GEndianMode</name>
@@ -1116,7 +1115,7 @@
                 </option>
                 <option>
                     <name>Output description</name>
-                    <state>No specifier n, no float nor long long, no scan set, no assignment suppressing, without multibyte support.</state>
+                    <state>No specifier a, A, no specifier n, no float nor long long, without multibyte support.</state>
                 </option>
                 <option>
                     <name>GOutputBinary</name>
@@ -1138,7 +1137,7 @@
                 </option>
                 <option>
                     <name>RTDescription</name>
-                    <state>0</state>
+                    <state>A compact configuration of the C/C++14 runtime library. No locale interface, C locale, no file descriptor support, no multibytes in printf and scanf, and no hex floats in strtod.</state>
                 </option>
                 <option>
                     <name>OGProductVersion</name>
@@ -1150,7 +1149,7 @@
                 </option>
                 <option>
                     <name>OGChipSelectEditMenu</name>
-                    <state>MIMXRT1011xxx5A	NXP MIMXRT1011xxx5A</state>
+                    <state>MIMXRT685S_M33	NXP MIMXRT685S_M33</state>
                 </option>
                 <option>
                     <name>GenLowLevelInterface</name>
@@ -1175,7 +1174,7 @@
                 <option>
                     <name>GBECoreSlave</name>
                     <version>32</version>
-                    <state>41</state>
+                    <state>61</state>
                 </option>
                 <option>
                     <name>OGUseCmsis</name>
@@ -1192,11 +1191,11 @@
                 <option>
                     <name>CoreVariant</name>
                     <version>32</version>
-                    <state>41</state>
+                    <state>61</state>
                 </option>
                 <option>
                     <name>GFPUDeviceSlave</name>
-                    <state>MIMXRT1011xxx5A	NXP MIMXRT1011xxx5A</state>
+                    <state>MIMXRT685S_M33	NXP MIMXRT685S_M33</state>
                 </option>
                 <option>
                     <name>FPU2</name>
@@ -1215,7 +1214,7 @@
                 <option>
                     <name>GFPUCoreSlave2</name>
                     <version>32</version>
-                    <state>41</state>
+                    <state>61</state>
                 </option>
                 <option>
                     <name>OGCMSISPackSelectDevice</name>
@@ -1265,7 +1264,7 @@
                 <option>
                     <name>TrustZoneModes</name>
                     <version>0</version>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>OGAarch64Abi</name>
@@ -1299,10 +1298,9 @@
                 <option>
                     <name>CCDefines</name>
                     <state>DEBUG</state>
-                    <state>XIP_EXTERNAL_FLASH=1</state>
-                    <state>XIP_BOOT_HEADER_ENABLE=1</state>
-                    <state>CPU_MIMXRT1011DAE5A</state>
-                    <state>SERIAL_PORT_TYPE_UART=1</state>
+                    <state>FSL_SDK_DRIVER_QUICK_ACCESS_ENABLE=1</state>
+                    <state>BOOT_HEADER_ENABLE=1</state>
+                    <state>CPU_MIMXRT685SFVKB_cm33</state>
                     <state>MCUXPRESSO_SDK</state>
                 </option>
                 <option>
@@ -1442,7 +1440,7 @@
                 </option>
                 <option>
                     <name>CCOptLevel</name>
-                    <state>2</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>CCOptStrategy</name>
@@ -1451,7 +1449,7 @@
                 </option>
                 <option>
                     <name>CCOptLevelSlave</name>
-                    <state>2</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>CCPosIndRopi</name>
@@ -1599,7 +1597,6 @@
                 <option>
                     <name>ADefines</name>
                     <state>DEBUG</state>
-                    <state>__STARTUP_INITIALIZE_NONCACHEDATA</state>
                 </option>
                 <option>
                     <name>AList</name>
@@ -1721,15 +1718,15 @@
                 <option>
                     <name>OOCOutputFormat</name>
                     <version>3</version>
-                    <state>0</state>
+                    <state>3</state>
                 </option>
                 <option>
                     <name>OCOutputOverride</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>OOCOutputFile</name>
-                    <state></state>
+                    <state>sdk20-app.bin</state>
                 </option>
                 <option>
                     <name>OOCCommandLineProducer</name>
@@ -1737,7 +1734,7 @@
                 </option>
                 <option>
                     <name>OOCObjCopyEnable</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
             </data>
         </settings>
@@ -1776,7 +1773,7 @@
                 </option>
                 <option>
                     <name>IlinkOutputFile</name>
-                    <state>iled_blinky.out</state>
+                    <state>gpio_led_output.out</state>
                 </option>
                 <option>
                     <name>IlinkDebugInfoEnable</name>
@@ -1840,7 +1837,7 @@
                 </option>
                 <option>
                     <name>IlinkIcfFile</name>
-                    <state>$PROJ_DIR$/MIMXRT1011xxxxx_flexspi_nor.icf</state>
+                    <state>$PROJ_DIR$/MIMXRT685Sxxxx_cm33_flash.icf</state>
                 </option>
                 <option>
                     <name>IlinkIcfFileSlave</name>
@@ -2073,7 +2070,7 @@
                 </option>
                 <option>
                     <name>IlinkTrustzoneImportLibraryOut</name>
-                    <state>###Unitialized###</state>
+                    <state>gpio_led_output_import_lib.o</state>
                 </option>
                 <option>
                     <name>OILinkExtraOption</name>
@@ -2194,7 +2191,7 @@
                 </option>
                 <option>
                     <name>Output description</name>
-                    <state>No specifier n, no float nor long long, no scan set, no assignment suppressing, without multibyte support.</state>
+                    <state>No specifier a, A, no specifier n, no float nor long long, without multibyte support.</state>
                 </option>
                 <option>
                     <name>GOutputBinary</name>
@@ -2228,7 +2225,7 @@
                 </option>
                 <option>
                     <name>OGChipSelectEditMenu</name>
-                    <state>MIMXRT1011xxx5A	NXP MIMXRT1011xxx5A</state>
+                    <state>MIMXRT685S_M33	NXP MIMXRT685S_M33</state>
                 </option>
                 <option>
                     <name>GenLowLevelInterface</name>
@@ -2253,7 +2250,7 @@
                 <option>
                     <name>GBECoreSlave</name>
                     <version>32</version>
-                    <state>41</state>
+                    <state>58</state>
                 </option>
                 <option>
                     <name>OGUseCmsis</name>
@@ -2270,11 +2267,11 @@
                 <option>
                     <name>CoreVariant</name>
                     <version>32</version>
-                    <state>41</state>
+                    <state>61</state>
                 </option>
                 <option>
                     <name>GFPUDeviceSlave</name>
-                    <state>MIMXRT1011xxx5A	NXP MIMXRT1011xxx5A</state>
+                    <state>MIMXRT685S_M33	NXP MIMXRT685S_M33</state>
                 </option>
                 <option>
                     <name>FPU2</name>
@@ -2293,7 +2290,7 @@
                 <option>
                     <name>GFPUCoreSlave2</name>
                     <version>32</version>
-                    <state>41</state>
+                    <state>61</state>
                 </option>
                 <option>
                     <name>OGCMSISPackSelectDevice</name>
@@ -2343,7 +2340,7 @@
                 <option>
                     <name>TrustZoneModes</name>
                     <version>0</version>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>OGAarch64Abi</name>
@@ -2377,8 +2374,8 @@
                 <option>
                     <name>CCDefines</name>
                     <state>NDEBUG</state>
-                    <state>CPU_MIMXRT1011DAE5A</state>
-                    <state>SERIAL_PORT_TYPE_UART=1</state>
+                    <state>CPU_MIMXRT685SFVKB_cm33</state>
+                    <state>BOOT_HEADER_ENABLE=1</state>
                     <state>MCUXPRESSO_SDK</state>
                 </option>
                 <option>
@@ -2675,7 +2672,6 @@
                 <option>
                     <name>ADefines</name>
                     <state>NDEBUG</state>
-                    <state>__STARTUP_INITIALIZE_NONCACHEDATA</state>
                 </option>
                 <option>
                     <name>AList</name>
@@ -2797,15 +2793,15 @@
                 <option>
                     <name>OOCOutputFormat</name>
                     <version>3</version>
-                    <state>0</state>
+                    <state>3</state>
                 </option>
                 <option>
                     <name>OCOutputOverride</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>OOCOutputFile</name>
-                    <state></state>
+                    <state>sdk20-app.bin</state>
                 </option>
                 <option>
                     <name>OOCCommandLineProducer</name>
@@ -2813,7 +2809,7 @@
                 </option>
                 <option>
                     <name>OOCObjCopyEnable</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
             </data>
         </settings>
@@ -2852,7 +2848,7 @@
                 </option>
                 <option>
                     <name>IlinkOutputFile</name>
-                    <state>iled_blinky.out</state>
+                    <state>gpio_led_output.out</state>
                 </option>
                 <option>
                     <name>IlinkDebugInfoEnable</name>
@@ -2916,7 +2912,7 @@
                 </option>
                 <option>
                     <name>IlinkIcfFile</name>
-                    <state>$PROJ_DIR$/MIMXRT1011xxxxx_ram.icf</state>
+                    <state>$PROJ_DIR$/MIMXRT685Sxxxx_cm33_ram.icf</state>
                 </option>
                 <option>
                     <name>IlinkIcfFileSlave</name>
@@ -3149,7 +3145,7 @@
                 </option>
                 <option>
                     <name>IlinkTrustzoneImportLibraryOut</name>
-                    <state>iled_blinky_import_lib.o</state>
+                    <state>###Unitialized###</state>
                 </option>
                 <option>
                     <name>OILinkExtraOption</name>
@@ -3232,7 +3228,7 @@
         </settings>
     </configuration>
     <configuration>
-        <name>flexspi_nor_release</name>
+        <name>flash_release</name>
         <toolchain>
             <name>ARM</name>
         </toolchain>
@@ -3250,15 +3246,15 @@
                 </option>
                 <option>
                     <name>ExePath</name>
-                    <state>$PROJ_DIR$/flexspi_nor_release</state>
+                    <state>$PROJ_DIR$/flash_release</state>
                 </option>
                 <option>
                     <name>ObjPath</name>
-                    <state>$PROJ_DIR$/flexspi_nor_release/obj</state>
+                    <state>$PROJ_DIR$/flash_release/obj</state>
                 </option>
                 <option>
                     <name>ListPath</name>
-                    <state>$PROJ_DIR$/flexspi_nor_release/list</state>
+                    <state>$PROJ_DIR$/flash_release/list</state>
                 </option>
                 <option>
                     <name>GEndianMode</name>
@@ -3292,7 +3288,7 @@
                 </option>
                 <option>
                     <name>RTDescription</name>
-                    <state>A compact configuration of the C/C++14 runtime library. No locale interface, C locale, no file descriptor support, no multibytes in printf and scanf, and no hex floats in strtod.</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>OGProductVersion</name>
@@ -3304,7 +3300,7 @@
                 </option>
                 <option>
                     <name>OGChipSelectEditMenu</name>
-                    <state>MIMXRT1011xxx5A	NXP MIMXRT1011xxx5A</state>
+                    <state>MIMXRT685S_M33	NXP MIMXRT685S_M33</state>
                 </option>
                 <option>
                     <name>GenLowLevelInterface</name>
@@ -3329,7 +3325,7 @@
                 <option>
                     <name>GBECoreSlave</name>
                     <version>32</version>
-                    <state>41</state>
+                    <state>58</state>
                 </option>
                 <option>
                     <name>OGUseCmsis</name>
@@ -3346,11 +3342,11 @@
                 <option>
                     <name>CoreVariant</name>
                     <version>32</version>
-                    <state>41</state>
+                    <state>61</state>
                 </option>
                 <option>
                     <name>GFPUDeviceSlave</name>
-                    <state>MIMXRT1011xxx5A	NXP MIMXRT1011xxx5A</state>
+                    <state>MIMXRT685S_M33	NXP MIMXRT685S_M33</state>
                 </option>
                 <option>
                     <name>FPU2</name>
@@ -3369,7 +3365,7 @@
                 <option>
                     <name>GFPUCoreSlave2</name>
                     <version>32</version>
-                    <state>41</state>
+                    <state>61</state>
                 </option>
                 <option>
                     <name>OGCMSISPackSelectDevice</name>
@@ -3419,7 +3415,7 @@
                 <option>
                     <name>TrustZoneModes</name>
                     <version>0</version>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>OGAarch64Abi</name>
@@ -3452,11 +3448,10 @@
                 <debug>0</debug>
                 <option>
                     <name>CCDefines</name>
-                    <state>XIP_EXTERNAL_FLASH=1</state>
-                    <state>XIP_BOOT_HEADER_ENABLE=1</state>
+                    <state>FSL_SDK_DRIVER_QUICK_ACCESS_ENABLE=1</state>
+                    <state>CPU_MIMXRT685SFVKB_cm33</state>
+                    <state>BOOT_HEADER_ENABLE=1</state>
                     <state>NDEBUG</state>
-                    <state>CPU_MIMXRT1011DAE5A</state>
-                    <state>SERIAL_PORT_TYPE_UART=1</state>
                     <state>MCUXPRESSO_SDK</state>
                 </option>
                 <option>
@@ -3596,7 +3591,7 @@
                 </option>
                 <option>
                     <name>CCOptLevel</name>
-                    <state>2</state>
+                    <state>3</state>
                 </option>
                 <option>
                     <name>CCOptStrategy</name>
@@ -3605,7 +3600,7 @@
                 </option>
                 <option>
                     <name>CCOptLevelSlave</name>
-                    <state>2</state>
+                    <state>3</state>
                 </option>
                 <option>
                     <name>CCPosIndRopi</name>
@@ -3744,7 +3739,7 @@
                 </option>
                 <option>
                     <name>ADebug</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>AltRegisterNames</name>
@@ -3752,8 +3747,7 @@
                 </option>
                 <option>
                     <name>ADefines</name>
-                    <state>NDEBUG</state>
-                    <state>__STARTUP_INITIALIZE_NONCACHEDATA</state>
+                    <state></state>
                 </option>
                 <option>
                     <name>AList</name>
@@ -3875,15 +3869,15 @@
                 <option>
                     <name>OOCOutputFormat</name>
                     <version>3</version>
-                    <state>0</state>
+                    <state>3</state>
                 </option>
                 <option>
                     <name>OCOutputOverride</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>OOCOutputFile</name>
-                    <state></state>
+                    <state>sdk20-app.bin</state>
                 </option>
                 <option>
                     <name>OOCCommandLineProducer</name>
@@ -3891,7 +3885,7 @@
                 </option>
                 <option>
                     <name>OOCObjCopyEnable</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
             </data>
         </settings>
@@ -3930,7 +3924,7 @@
                 </option>
                 <option>
                     <name>IlinkOutputFile</name>
-                    <state>iled_blinky.out</state>
+                    <state>gpio_led_output.out</state>
                 </option>
                 <option>
                     <name>IlinkDebugInfoEnable</name>
@@ -3994,7 +3988,7 @@
                 </option>
                 <option>
                     <name>IlinkIcfFile</name>
-                    <state>$PROJ_DIR$/MIMXRT1011xxxxx_flexspi_nor.icf</state>
+                    <state>$PROJ_DIR$/MIMXRT685Sxxxx_cm33_flash.icf</state>
                 </option>
                 <option>
                     <name>IlinkIcfFileSlave</name>
@@ -4227,7 +4221,7 @@
                 </option>
                 <option>
                     <name>IlinkTrustzoneImportLibraryOut</name>
-                    <state>iled_blinky_import_lib.o</state>
+                    <state>###Unitialized###</state>
                 </option>
                 <option>
                     <name>OILinkExtraOption</name>
@@ -4333,9 +4327,6 @@
     <group>
         <name>CMSIS</name>
         <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\CMSIS\Core\Include\cachel1_armv7.h</name>
-        </file>
-        <file>
             <name>$PROJ_DIR$\..\..\..\..\..\CMSIS\Core\Include\cmsis_armcc.h</name>
         </file>
         <file>
@@ -4357,10 +4348,13 @@
             <name>$PROJ_DIR$\..\..\..\..\..\CMSIS\Core\Include\cmsis_version.h</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\CMSIS\Core\Include\core_cm7.h</name>
+            <name>$PROJ_DIR$\..\..\..\..\..\CMSIS\Core\Include\core_cm33.h</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\..\..\..\..\CMSIS\Core\Include\mpu_armv7.h</name>
+            <name>$PROJ_DIR$\..\..\..\..\..\CMSIS\Core\Include\mpu_armv8.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\..\CMSIS\Core\Include\tz_context.h</name>
         </file>
     </group>
     <group>
@@ -4369,20 +4363,26 @@
             <name>$PROJ_DIR$\..\fsl_device_registers.h</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\MIMXRT1011.h</name>
+            <name>$PROJ_DIR$\..\MIMXRT685S_cm33.h</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\MIMXRT1011_features.h</name>
+            <name>$PROJ_DIR$\..\MIMXRT685S_cm33_features.h</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\system_MIMXRT1011.c</name>
+            <name>$PROJ_DIR$\..\system_MIMXRT685S_cm33.c</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\system_MIMXRT1011.h</name>
+            <name>$PROJ_DIR$\..\system_MIMXRT685S_cm33.h</name>
         </file>
     </group>
     <group>
         <name>drivers</name>
+        <file>
+            <name>$PROJ_DIR$\..\fsl_cache.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\fsl_cache.h</name>
+        </file>
         <file>
             <name>$PROJ_DIR$\..\fsl_clock.c</name>
         </file>
@@ -4408,34 +4408,49 @@
             <name>$PROJ_DIR$\..\fsl_gpio.h</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\fsl_iomuxc.h</name>
+            <name>$PROJ_DIR$\..\fsl_inputmux.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\fsl_inputmux.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\fsl_inputmux_connections.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\fsl_iopctl.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\fsl_power.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\fsl_power.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\fsl_reset.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\fsl_reset.h</name>
+        </file>
+    </group>
+    <group>
+        <name>flash_config</name>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\xip_flash_config\evkmimxrt685_flash_nor_config.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\xip_flash_config\evkmimxrt685_flash_nor_config.h</name>
         </file>
     </group>
     <group>
         <name>source</name>
         <file>
-            <name>$PROJ_DIR$\..\led_blinky.c</name>
+            <name>$PROJ_DIR$\..\gpio_led_output.c</name>
         </file>
     </group>
     <group>
         <name>startup</name>
         <file>
-            <name>$PROJ_DIR$\startup_MIMXRT1011.s</name>
-        </file>
-    </group>
-    <group>
-        <name>xip</name>
-        <file>
-            <name>$PROJ_DIR$\..\..\..\xip_flash_config\evkmimxrt1010_flexspi_nor_config.c</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\..\xip_flash_config\evkmimxrt1010_flexspi_nor_config.h</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\fsl_flexspi_nor_boot.c</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\fsl_flexspi_nor_boot.h</name>
+            <name>$PROJ_DIR$\startup_MIMXRT685S_cm33.s</name>
         </file>
     </group>
 </project>
